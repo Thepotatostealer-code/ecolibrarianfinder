@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "ecolibrarianfinder",
+  "version": "${version}",
+  "name": "EcoLibrarianFinder",
+  "description": "Automatically rerolls librarian trades to find EcoEnchants custom enchantments.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ecolibrarianfinder.EcoLibrarianFinderMod"
+    ]
+  },
+  "mixins": [
+    "ecolibrarianfinder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
